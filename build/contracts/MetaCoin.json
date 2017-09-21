@@ -1,0 +1,206 @@
+{
+  "contract_name": "MetaCoin",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getBalanceInEth",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "sendCoin",
+      "outputs": [
+        {
+          "name": "sufficient",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "array",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "useArray",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b600160a060020a033216600090815260208190526040902061271090555b5b6102c38061003b6000396000f300606060405263ffffffff60e060020a6000350416637bd703e8811461004257806390b98a11146100705780639e63e3ee146100a3578063f8b2cb4f14610108575bfe5b341561004a57fe5b61005e600160a060020a0360043516610136565b60408051918252519081900360200190f35b341561007857fe5b61008f600160a060020a03600435166024356101bd565b604080519115158252519081900360200190f35b34156100ab57fe5b61005e60048080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284375094965061025595505050505050565b60408051918252519081900360200190f35b341561011057fe5b61005e600160a060020a0360043516610278565b60408051918252519081900360200190f35b600073__ConvertLib____________________________6396e4ee3d61015b84610278565b60026000604051602001526040518363ffffffff1660e060020a028152600401808381526020018281526020019250505060206040518083038186803b15156101a057fe5b6102c65a03f415156101ae57fe5b5050604051519150505b919050565b600160a060020a033316600090815260208190526040812054829010156101e65750600061024f565b600160a060020a0333811660008181526020818152604080832080548890039055938716808352918490208054870190558351868152935191937fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef929081900390910190a35060015b92915050565b600081600081518110151561026657fe5b9060200190602002015190505b919050565b600160a060020a0381166000908152602081905260409020545b9190505600a165627a7a723058208321601b806095b6815a03da451f645ac4296c016766b8df390b027b30c3148b0029",
+  "networks": {
+    "1506021572330": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {
+        "ConvertLib": "0xf90f58b41d9ba8358b64dd8b8b6d0bbebd4c5881"
+      },
+      "address": "0x577318fcc81c8f03a2ae42eb199f4722950d12a5",
+      "updated_at": 1506021576244
+    },
+    "1506021620712": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {
+        "ConvertLib": "0x96b20c371dc0c4bac797e5860227ad3622fd1597"
+      },
+      "address": "0x63beee8df7ca3a5a9c8c89d1153fb43e66154b39",
+      "updated_at": 1506021623906
+    },
+    "1506021724820": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {
+        "ConvertLib": "0xae0e7446abd02468d923cd26d939ede245be7488"
+      },
+      "address": "0xc1fd7d9454aa854bfc03dc211c097298be0d0fb5",
+      "updated_at": 1506021729478
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1506021729478
+}
